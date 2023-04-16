@@ -1,5 +1,8 @@
-function visible(text)
+local currentKey = nil
+
+function visible(text, key)
     text = text or 'Placeholder Text'
+    currentKey = key
 
     SendNUIMessage({
         action = 'visible',
@@ -7,7 +10,9 @@ function visible(text)
     })
 end
 
-function hidden() 
+function hidden(key)
+    if currentKey and key and currentKey ~= key then return end
+
     SendNUIMessage({
         action = 'hidden'
     })
