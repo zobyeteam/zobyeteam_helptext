@@ -15,8 +15,6 @@ window.addEventListener('message', ({ data }) => {
         playSound('help.mp3');
     } else if (data.action === 'hidden') {
         app.display = false;
-
-        playSound('help.mp3');
     }
 });
 
