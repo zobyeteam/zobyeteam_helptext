@@ -11,7 +11,16 @@ window.addEventListener('message', ({ data }) => {
     if (data.action === 'visible') {
         app.text = data.text;
         app.display = true;
+
+        playSound('help.mp3');
     } else if (data.action === 'hidden') {
         app.display = false;
+
+        playSound('help.mp3');
     }
 });
+
+function playSound(targetFile) {
+    const audio = new Audio(`./sound/${targetFile}`);
+    audio.play();
+}
