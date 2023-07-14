@@ -1,23 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700;800&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-	font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
 }
 
-/* body {
-    background-image: url('https://cdn.discordapp.com/attachments/1079080782804549642/1079089879260069918/image.png');
-} */
+.container {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 
-.v-enter-active,
-.v-leave-active {
-	transition: opacity 0.25s ease;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    width: fit-content;
+    height: 2.187vw;
+
+    border-radius: 0vw 0.625vw 0.05vw 0vw;
+    border: 0.175vw solid rgba(53, 53, 53, 0.50);
 }
 
-.v-enter-from,
-.v-leave-to {
-	opacity: 0;
+.bar {
+    width: 0.2vw;
+    height: 1.97vw;
+
+    background: linear-gradient(180deg, #FF7CA5 0%, #FF0050 100%);
+}
+
+.main {
+    width: fit-content;
+    height: 1.97vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.41vw;
+
+    border-radius: 0vw 0.625vw 0.05vw 0vw;
+    background: #474747;
+
+    padding: 0vw 2.08vw 0 2.08vw;
+
+    color: #D5D5D5;
+    font-size: 0.72vw;
+}
+
+.main div {
+    width: fit-content;
+    height: 1.14vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFF;
+    border-radius: 0.57vw;
+    border: 0.1vw solid #FF7CA5;
+
+    padding: 0vw 0.26vw;
+}
+
+.main div p {
+    font-size: 0.72vw;
+    font-style: normal;
+    font-weight: 500;
+
+    background: linear-gradient(180deg, #FF7CA5 0%, #FF0050 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
