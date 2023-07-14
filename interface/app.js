@@ -2,7 +2,7 @@ const app = Vue.createApp({
     data() {
         return {
             display: false,
-            text: 'Place <span class="font-medium text-sky-500">E</span> Holder'
+            text: 'Place <span class="font-medium text-yellow">E</span> Holder'
         }
     },
 }).mount('.wrapper');
