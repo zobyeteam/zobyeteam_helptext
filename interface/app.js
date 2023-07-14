@@ -1,8 +1,8 @@
 const app = Vue.createApp({
     data() {
         return {
-            display: true,
-            text: 'PRESS <div><p>X</p></div> TO CANCEL'
+            display: false,
+            text: '<div><p>E</p></div>'
         }
     },
 }).mount('.wrapper');
