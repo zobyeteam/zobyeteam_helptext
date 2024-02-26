@@ -11,8 +11,3 @@ ui_page 'interface/index.html'
 files {
     'interface/**'
 }
-
-exports {
-    'visible',
-    'hidden'
-}
