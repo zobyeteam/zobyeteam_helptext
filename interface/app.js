@@ -9,16 +9,16 @@ const app = Vue.createApp({
     data() {
         return {
             display: false,
-            text: '<div><p>E</p></div>',
-            description: 'TO CANCEL'
+            text: 'E',
+            description: 'เพื่อเปิดร้านค้า'
         }
     },
 }).mount('.wrapper');
 
 window.addEventListener('message', ({ data }) => {
-    if (data.action === 'playSound') {
-        playSound(data.fileName);
-    }
+    // if (data.action === 'playSound') {
+    //     playSound(data.fileName);
+    // }
 
     if (data.action === 'visible') {
         app.text = data.text;
