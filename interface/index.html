@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZOBYETEAM | HELPTEXT</title>
+    <title>ZOBYETEAM HELPTEXT | DEPT</title>
     <link rel="stylesheet" href="style.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -44,9 +44,6 @@
                         '4xl': '1.875vw',
                         'base': '0.84vw'
                     },
-                    colors: {
-                        'black-rgba': 'rgba(20, 20, 20, 0.9)'
-                    },
                 }
             }
         }
@@ -54,23 +51,125 @@
 </head>
 
 <body>
-
     <div class="wrapper">
         <transition>
-            <div v-if="display" v-html="text"
-                class="absolute left-1/2 bottom-10 -translate-x-1/2 px-4 py-2 text-white bg-black-rgba rounded-2xl">
+            <div v-if="display" class="absolute left-[50%] -translate-x-1/2 top-[93%] -translate-y-1/2 w-fit h-[3.5vw]"
+                ref="animationButtom">
+                <div class="flex justify-center items-center h-full bg-[#B88A94] rounded-[5em]">
+                    <div class="flex justify-center items-center w-[97%] h-[90%] bg-[#FEEDCF] rounded-[5em]">
+                        <div class="flex justify-center items-end w-[97%] h-[90%] bg-[#FF95B4] rounded-[5em]">
+                            <div class="flex justify-center items-start w-full h-[90%] bg-[#E2386D] rounded-[3em]">
+                                <div class="relative flex justify-center items-center w-full h-[86%] px-8 bg-[#FF5A9B] rounded-full gap-3">
+                                    <div class="relative">
+                                        <svg class="w-[1.8vw]" viewBox="0 0 39 35" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="17.4107" cy="13.6501" rx="17.4107" ry="13.6501"
+                                                fill="url(#paint0_linear_7_3968)"
+                                                transform="matrix(-1 0 0 1 36.5 6.5)" />
+                                            <path
+                                                d="M37.5 19.4445C37.5 26.9086 29.7751 33.5 19.5 33.5C9.22487 33.5 1.5 26.9086 1.5 19.4445C1.5 11.9804 9.22487 5.38898 19.5 5.38898C29.7751 5.38898 37.5 11.9804 37.5 19.4445Z"
+                                                stroke="url(#paint0_linear_7_3876)" stroke-width="3" />
+                                            <g class="blueButtom">
+                                                <ellipse cx="19.5" cy="15.5978" rx="16.25" ry="15.5978"
+                                                    fill="url(#paint1_linear_7_3876)" />
+                                            </g>
+
+                                            <g class="buttom-shadow">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M35.6767 14.1068C34.8944 22.0215 27.9505 28.2129 19.5 28.2129C11.0495 28.2129 4.10563 22.0215 3.32334 14.1068C3.27482 14.5977 3.25 15.0952 3.25 15.5984C3.25 24.2128 10.5254 31.1961 19.5 31.1961C28.4746 31.1961 35.75 24.2128 35.75 15.5984C35.75 15.0952 35.7252 14.5977 35.6767 14.1068Z"
+                                                    fill="#5398DD" />
+                                                <path
+                                                    d="M28.484 27.5192C26.7553 28.2326 26.7886 26.255 28.3813 25.2262C28.5134 25.1409 28.6546 25.0482 28.8056 24.9468C30.2139 24.0024 32.2822 20.3753 32.3409 22.4408C32.3996 24.5063 30.3862 26.4917 28.484 27.5192Z"
+                                                    fill="#1E1E1E" fill-opacity="0.2" />
+                                            </g>
+
+                                            <g class="glow-white">
+                                                <path
+                                                    d="M27.8352 26.3106C26.1065 27.024 26.1398 25.0464 27.7325 24.0176C27.8646 23.9323 28.0058 23.8395 28.1568 23.7382C29.5651 22.7938 31.6334 19.1667 31.6921 21.2322C31.7508 23.2977 29.7374 25.283 27.8352 26.3106Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M14.0542 2.91703C14.1272 4.08213 12.9328 3.54666 11.5052 4.66242C10.5107 5.43965 9.10052 7.43055 8.77134 6.08787C8.44216 4.74519 9.65106 3.60477 11.0282 2.71704C12.2549 2.08272 13.7251 1.57435 14.0542 2.91703Z"
+                                                    fill="#1E1E1E" fill-opacity="0.2" />
+                                                <path
+                                                    d="M8.40594 7.13481C9.44219 7.45055 8.95964 9.7592 7.92527 9.43745C7.01445 9.18807 6.99177 7.49693 7.89048 7.19636C8.02559 7.15118 8.15803 7.13932 8.26467 7.12126C8.30675 7.11413 8.35468 7.11919 8.40594 7.13481Z"
+                                                    fill="#1E1E1E" fill-opacity="0.2" />
+                                                <path
+                                                    d="M13.2825 2.35654C13.3555 3.52165 12.161 2.98618 10.7334 4.10193C9.73899 4.87916 8.3288 6.87007 7.99961 5.52738C7.67043 4.1847 8.87933 3.04428 10.2565 2.15655C11.4832 1.52223 12.9533 1.01386 13.2825 2.35654Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M7.63348 6.57432C8.66973 6.89007 8.18718 9.19872 7.15281 8.87697C6.24199 8.62758 6.21931 6.93645 7.11802 6.63588C7.25313 6.59069 7.38557 6.57884 7.4922 6.56077C7.53429 6.55364 7.58222 6.5587 7.63348 6.57432Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_7_3876" x="12.5" y="4.02002" width="15.1801"
+                                                    height="15.98" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                        result="hardAlpha" />
+                                                    <feOffset dx="1" dy="2" />
+                                                    <feComposite in2="hardAlpha" operator="out" />
+                                                    <feColorMatrix type="matrix"
+                                                        values="0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 0.4 0" />
+                                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_7_3876" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_dropShadow_7_3876" result="shape" />
+                                                </filter>
+                                                <linearGradient id="paint0_linear_7_3876" x1="19.5" y1="3.80427"
+                                                    x2="19.5" y2="35" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.244792" stop-color="#9FFCFF" />
+                                                    <stop offset="1" stop-color="#40A9DD" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_7_3876" x1="19.5" y1="0" x2="19.5"
+                                                    y2="31.1955" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.310187" stop-color="#4BD1FE" />
+                                                    <stop offset="1" stop-color="#9FFCFF" stop-opacity="0" />
+                                                </linearGradient>
+                                            </defs>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_7_3968" x1="17.4107" y1="0"
+                                                    x2="17.4107" y2="27.3002" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#4CD2FF" />
+                                                    <stop offset="1" stop-color="#F0FEFF" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <div class="absolute left-[50%] -translate-x-1/2 top-[35%] -translate-y-1/2 text text-[0.941666666666667vw] text-[#FFF] text-shadow font-bold"
+                                            v-html="text"></div>
+                                    </div>
+
+                                    <div class="text-[0.8vw] whitespace-nowrap text-[#FEEDCF] text-shadow font-bold"
+                                        v-html="description"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg class="absolute left-[1.2vw] -translate-x-1/2 top-[0.9vw] -translate-y-1/2 w-[1vw]" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.6248 3.6025C17.3947 5.90012 15.2072 4.46035 12.0288 6.16558C9.81472 7.35343 6.38943 10.7721 6.17064 8.04328C5.95184 5.31446 8.70622 3.4888 11.7118 2.21186C14.3386 1.37962 17.406 0.873672 17.6248 3.6025Z" fill="#1E1E1E" fill-opacity="0.2"/>
+                            <path d="M5.86879 10.7595C6.5855 11.9722 5.74844 13.5426 4.49867 14.1924C4.10785 14.3956 3.73087 14.4575 3.4101 14.2971C3.36216 14.2751 3.31637 14.2537 3.27264 14.2327C1.67061 13.4624 2.18062 10.3637 3.90823 9.94506C4.24546 9.86335 4.56872 9.89207 4.82387 9.89207C5.14281 9.89207 5.56817 10.2509 5.86879 10.7595Z" fill="#1E1E1E" fill-opacity="0.2"/>
+                            <path d="M16.2794 2.25777C16.0492 4.55539 13.8618 3.11562 10.6833 4.82085C8.46926 6.00871 5.04397 9.42738 4.82518 6.69855C4.60638 3.96973 7.36076 2.14408 10.3663 0.86713C12.9932 0.0348977 16.0606 -0.471055 16.2794 2.25777Z" fill="white"/>
+                            <path d="M4.52333 9.4148C5.24004 10.6274 4.40298 12.1979 3.15322 12.8476C2.76239 13.0508 2.38541 13.1128 2.06464 12.9524C2.0167 12.9304 1.97091 12.909 1.92718 12.888C0.325155 12.1176 0.835158 9.01893 2.56277 8.60034C2.9 8.51863 3.22326 8.54734 3.47841 8.54734C3.79735 8.54734 4.22271 8.90617 4.52333 9.4148Z" fill="white"/>
+                        </svg>
+
+                        <div class="relative">
+                            <svg class="absolute left-[-0.6vw] -translate-x-1/2 top-[0.8vw] -translate-y-1/2 w-[1vw]" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.36549 15.0808C5.74784 16.4441 5.40711 12.7059 8.74498 10.7553C9.04532 10.5798 9.36716 10.3884 9.71211 10.1788C12.7903 8.30774 16.891 1.33714 17.4143 5.22692C17.9377 9.1167 13.6558 12.9889 9.45129 15.0484C9.42248 15.0593 9.39388 15.0701 9.36549 15.0808Z" fill="#1E1E1E" fill-opacity="0.2"/>
+                                <path d="M7.63722 12.8417C4.01957 14.205 3.67884 10.4668 7.0167 8.51628C7.31705 8.34076 7.63889 8.1494 7.98384 7.93973C11.0621 6.06869 15.1627 -0.901899 15.6861 2.98788C16.2094 6.87766 11.9275 10.7499 7.72302 12.8094C7.69421 12.8203 7.66561 12.831 7.63722 12.8417Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </transition>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
-        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.min.js"
         integrity="sha512-DJ2+sosWB5FnZAIeCWAHu2gxQ7Gi438oOZLcBQSOrW8gD0s7LIXDv/5RW76B3FcljF40BXnfqNIo6Dhp7dFHJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./app.js"></script>
-
 </body>
 
 </html>
